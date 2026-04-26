@@ -1,0 +1,5 @@
+name: evoai-lab
+version: 0.1.0
+entry_point: backend.env.evoai_env:EvoAIEnv
+description: "Calibration-focused self-improving LLM environment."
+

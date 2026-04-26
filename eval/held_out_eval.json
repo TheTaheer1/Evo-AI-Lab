@@ -1,0 +1,452 @@
+[
+  {
+    "id": "eval_math_001",
+    "question": "What is the derivative of f(x) = x^3 + 2x^2 - 5x + 1?",
+    "question_type": "math",
+    "topic": "calculus",
+    "difficulty_tier": "moderate",
+    "gold_answer": "3x^2 + 4x - 5",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_002",
+    "question": "What is the sum of the infinite geometric series 1 + 1/2 + 1/4 + 1/8 + ...?",
+    "question_type": "math",
+    "topic": "series",
+    "difficulty_tier": "moderate",
+    "gold_answer": "2",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_003",
+    "question": "A fair six-sided die is rolled twice. What is the probability that the sum equals 7?",
+    "question_type": "math",
+    "topic": "probability",
+    "difficulty_tier": "moderate",
+    "gold_answer": "1/6",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_004",
+    "question": "What is the integral of sin(x) * cos(x) dx?",
+    "question_type": "math",
+    "topic": "calculus",
+    "difficulty_tier": "hard",
+    "gold_answer": "sin^2(x)/2 + C",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_005",
+    "question": "How many distinct ways can 5 books be arranged on a shelf if 2 specific books must always be adjacent?",
+    "question_type": "math",
+    "topic": "combinatorics",
+    "difficulty_tier": "hard",
+    "gold_answer": "48",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_006",
+    "question": "What is the eigenvalue corresponding to eigenvector [1, 1] for the matrix [[3, 1], [1, 3]]?",
+    "question_type": "math",
+    "topic": "linear_algebra",
+    "difficulty_tier": "hard",
+    "gold_answer": "4",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_007",
+    "question": "Prove or disprove: the sum of two irrational numbers is always irrational.",
+    "question_type": "math",
+    "topic": "number_theory",
+    "difficulty_tier": "expert",
+    "gold_answer": "False. Counterexample: sqrt(2) + (-sqrt(2)) = 0, which is rational.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_008",
+    "question": "What is the limit of (sin x) / x as x approaches 0?",
+    "question_type": "math",
+    "topic": "calculus",
+    "difficulty_tier": "moderate",
+    "gold_answer": "1",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_009",
+    "question": "If a matrix A has rank 3 and is 5x7, what is the nullity of A?",
+    "question_type": "math",
+    "topic": "linear_algebra",
+    "difficulty_tier": "hard",
+    "gold_answer": "4",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_math_010",
+    "question": "What is the Fourier transform of the Dirac delta function δ(t)?",
+    "question_type": "math",
+    "topic": "signal_processing",
+    "difficulty_tier": "expert",
+    "gold_answer": "1 (constant function equal to 1 for all frequencies)",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_001",
+    "question": "Write a Python function that returns the nth Fibonacci number using memoisation. What does fibonacci(10) return?",
+    "question_type": "code",
+    "topic": "algorithms",
+    "difficulty_tier": "moderate",
+    "gold_answer": "55",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_002",
+    "question": "What is the output of this Python code?\n\nx = [1, 2, 3]\ny = x\ny.append(4)\nprint(x)",
+    "question_type": "code",
+    "topic": "python_semantics",
+    "difficulty_tier": "moderate",
+    "gold_answer": "[1, 2, 3, 4]",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_003",
+    "question": "What is the time complexity of inserting an element into a balanced binary search tree?",
+    "question_type": "code",
+    "topic": "data_structures",
+    "difficulty_tier": "moderate",
+    "gold_answer": "O(log n)",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_004",
+    "question": "What does the following Python decorator do?\n\n```python\ndef decorator(func):\n    def wrapper(*args, **kwargs):\n        print('before')\n        result = func(*args, **kwargs)\n        print('after')\n        return result\n    return wrapper\n```",
+    "question_type": "code",
+    "topic": "python_patterns",
+    "difficulty_tier": "moderate",
+    "gold_answer": "It wraps a function to print 'before' and 'after' around each call, returning the original result.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_005",
+    "question": "In Python, what is the difference between a shallow copy and a deep copy? Give an example where they produce different results.",
+    "question_type": "code",
+    "topic": "python_semantics",
+    "difficulty_tier": "hard",
+    "gold_answer": "A shallow copy copies the outer object but shares nested object references. A deep copy recursively copies all nested objects. Example: a list of lists — modifying a nested list in the shallow copy also modifies the original.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_006",
+    "question": "What is the output of this Python code?\n\nprint(0.1 + 0.2 == 0.3)",
+    "question_type": "code",
+    "topic": "floating_point",
+    "difficulty_tier": "hard",
+    "gold_answer": "False",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_007",
+    "question": "Explain the GIL in CPython and how it affects multi-threaded CPU-bound programs.",
+    "question_type": "code",
+    "topic": "concurrency",
+    "difficulty_tier": "hard",
+    "gold_answer": "The Global Interpreter Lock (GIL) allows only one thread to execute Python bytecode at a time. For CPU-bound programs, this means multi-threading does not achieve true parallelism. Use multiprocessing instead.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_008",
+    "question": "What is the worst-case time complexity of quicksort and what input causes it?",
+    "question_type": "code",
+    "topic": "algorithms",
+    "difficulty_tier": "hard",
+    "gold_answer": "O(n^2). It occurs when the pivot is always the smallest or largest element, such as a sorted or reverse-sorted array with naive pivot selection.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_009",
+    "question": "In Python, what does `__slots__` do and when would you use it?",
+    "question_type": "code",
+    "topic": "python_internals",
+    "difficulty_tier": "expert",
+    "gold_answer": "__slots__ prevents the creation of a __dict__ for each instance, reducing memory usage. Use it in classes with many instances where attribute names are fixed.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_code_010",
+    "question": "What is a memory leak in the context of Python and garbage collection, and how can circular references cause one?",
+    "question_type": "code",
+    "topic": "python_internals",
+    "difficulty_tier": "expert",
+    "gold_answer": "Python's reference counting cannot collect circular references. If two objects reference each other and nothing else references them, their reference count never reaches 0. The cyclic garbage collector handles this, but it can be delayed or disabled.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_001",
+    "question": "All mammals are warm-blooded. Whales are mammals. Therefore, whales are warm-blooded. Is this argument valid and sound?",
+    "question_type": "reasoning",
+    "topic": "logic",
+    "difficulty_tier": "moderate",
+    "gold_answer": "Yes. The argument is both valid (the conclusion follows necessarily from the premises) and sound (both premises are factually true).",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_002",
+    "question": "You have 12 identical-looking balls. One is slightly heavier or lighter than the others. Using a balance scale exactly 3 times, can you always identify the odd ball and whether it is heavier or lighter?",
+    "question_type": "reasoning",
+    "topic": "puzzles",
+    "difficulty_tier": "hard",
+    "gold_answer": "Yes. By strategically dividing and comparing groups of 4 balls in three weighings, it is always possible to identify the odd ball and determine if it is heavier or lighter.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_003",
+    "question": "If P implies Q, and Q is false, what can we conclude about P?",
+    "question_type": "reasoning",
+    "topic": "propositional_logic",
+    "difficulty_tier": "moderate",
+    "gold_answer": "P must be false. This is modus tollens: (P → Q) ∧ ¬Q ⊢ ¬P.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_004",
+    "question": "A prisoner is told: 'You will be executed on a day this week that you cannot predict the night before.' What is the logical conclusion?",
+    "question_type": "reasoning",
+    "topic": "paradoxes",
+    "difficulty_tier": "expert",
+    "gold_answer": "The unexpected hanging paradox. The prisoner reasons backwards to conclude no execution is possible, yet can still be surprised — demonstrating a failure in self-referential reasoning about future knowledge.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_005",
+    "question": "Two trains start 100 miles apart, each moving toward the other at 50 mph. A fly travels between them at 100 mph. How far does the fly travel before the trains collide?",
+    "question_type": "reasoning",
+    "topic": "puzzles",
+    "difficulty_tier": "moderate",
+    "gold_answer": "100 miles. The trains take 1 hour to collide; the fly travels at 100 mph for 1 hour.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_006",
+    "question": "Is the statement 'This sentence is false' true or false?",
+    "question_type": "reasoning",
+    "topic": "paradoxes",
+    "difficulty_tier": "hard",
+    "gold_answer": "It is a paradox (the liar's paradox). If true, it is false; if false, it is true. It is neither consistently true nor false within classical logic.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_007",
+    "question": "Three friends each wear a hat (red or blue). Each can see the others' hats but not their own. They must simultaneously guess their own hat colour or pass. Devise a strategy where at least one person is guaranteed to be correct.",
+    "question_type": "reasoning",
+    "topic": "game_theory",
+    "difficulty_tier": "expert",
+    "gold_answer": "Each person looks at the other two hats. If both are the same colour, guess the opposite. If they differ, pass. This guarantees exactly one correct guess when all three hats are not the same colour (6 out of 8 cases).",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_008",
+    "question": "In a room of 23 randomly selected people, what is the approximate probability that at least two share a birthday?",
+    "question_type": "reasoning",
+    "topic": "probability",
+    "difficulty_tier": "hard",
+    "gold_answer": "Approximately 50%. This is the birthday paradox — most people intuitively underestimate this probability.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_009",
+    "question": "Can an argument be valid but unsound? Give an example.",
+    "question_type": "reasoning",
+    "topic": "logic",
+    "difficulty_tier": "moderate",
+    "gold_answer": "Yes. Example: All cats can fly (false). My pet is a cat. Therefore my pet can fly. The structure is valid, but the first premise is false, making it unsound.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_logic_010",
+    "question": "What is the difference between inductive and deductive reasoning? Which provides certainty?",
+    "question_type": "reasoning",
+    "topic": "epistemology",
+    "difficulty_tier": "moderate",
+    "gold_answer": "Deductive reasoning starts with premises and reaches guaranteed conclusions if the premises are true. Inductive reasoning draws probable conclusions from observations. Only deductive reasoning provides certainty (given true premises).",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_001",
+    "question": "What is the speed of light in a vacuum?",
+    "question_type": "factual",
+    "topic": "physics",
+    "difficulty_tier": "moderate",
+    "gold_answer": "Approximately 299,792,458 metres per second (about 3 × 10^8 m/s).",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_002",
+    "question": "Who developed the theory of general relativity and in what year was it published?",
+    "question_type": "factual",
+    "topic": "physics_history",
+    "difficulty_tier": "moderate",
+    "gold_answer": "Albert Einstein published the general theory of relativity in 1915.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_003",
+    "question": "What is the powerhouse of the cell?",
+    "question_type": "factual",
+    "topic": "biology",
+    "difficulty_tier": "moderate",
+    "gold_answer": "The mitochondria.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_004",
+    "question": "What is the Turing test and what does it measure?",
+    "question_type": "factual",
+    "topic": "computer_science",
+    "difficulty_tier": "moderate",
+    "gold_answer": "The Turing test, proposed by Alan Turing in 1950, evaluates a machine's ability to exhibit intelligent behaviour indistinguishable from a human through text conversation with a human judge.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_005",
+    "question": "What is the difference between supervised and unsupervised machine learning?",
+    "question_type": "factual",
+    "topic": "machine_learning",
+    "difficulty_tier": "moderate",
+    "gold_answer": "Supervised learning trains on labelled data to learn input-output mappings. Unsupervised learning finds patterns in unlabelled data without predefined correct outputs.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_006",
+    "question": "What does CAP theorem state in distributed systems?",
+    "question_type": "factual",
+    "topic": "distributed_systems",
+    "difficulty_tier": "hard",
+    "gold_answer": "CAP theorem states that a distributed system can guarantee at most two of three properties simultaneously: Consistency, Availability, and Partition tolerance.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_007",
+    "question": "What is backpropagation and what algorithm is used to update weights in neural networks?",
+    "question_type": "factual",
+    "topic": "deep_learning",
+    "difficulty_tier": "hard",
+    "gold_answer": "Backpropagation is an algorithm that computes the gradient of the loss function with respect to each weight by applying the chain rule backwards through the network. Weights are updated using gradient descent (or variants like Adam, SGD).",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_008",
+    "question": "What is attention in the context of transformer models, and what problem does it solve?",
+    "question_type": "factual",
+    "topic": "nlp",
+    "difficulty_tier": "hard",
+    "gold_answer": "Attention is a mechanism that allows each token to attend to all other tokens in the sequence, weighted by relevance (computed via query-key dot products). It solves the long-range dependency problem of RNNs.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_009",
+    "question": "What is the halting problem and why is it undecidable?",
+    "question_type": "factual",
+    "topic": "computability",
+    "difficulty_tier": "expert",
+    "gold_answer": "The halting problem asks whether an arbitrary program will terminate on a given input. Turing proved it is undecidable by showing that assuming a halting oracle leads to a contradiction via a self-referential program.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_factual_010",
+    "question": "What is RLHF and how is it used to train large language models?",
+    "question_type": "factual",
+    "topic": "llm_training",
+    "difficulty_tier": "hard",
+    "gold_answer": "RLHF (Reinforcement Learning from Human Feedback) uses human preference rankings to train a reward model, which then provides reward signals to fine-tune an LLM via reinforcement learning (typically PPO) to produce outputs humans prefer.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_001",
+    "question": "You need to deploy a web application with zero downtime. Describe the steps you would take using a blue-green deployment strategy.",
+    "question_type": "reasoning",
+    "topic": "devops",
+    "difficulty_tier": "moderate",
+    "gold_answer": "Deploy the new version to the idle environment (green). Run smoke tests. Switch traffic (e.g., load balancer or DNS) from blue to green. Keep blue available for rollback. Decommission blue once green is stable.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_002",
+    "question": "Design a rate limiter for an API that handles 100,000 requests per second. What algorithm would you choose and why?",
+    "question_type": "reasoning",
+    "topic": "system_design",
+    "difficulty_tier": "hard",
+    "gold_answer": "Use the token bucket algorithm for its ability to handle bursts while enforcing average limits. Implement in Redis with atomic Lua scripts for distributed coordination. Advantages: precise control, burst accommodation, low latency.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_003",
+    "question": "You have a dataset with 10 million rows and need to train a model every hour. What infrastructure and pipeline would you design?",
+    "question_type": "reasoning",
+    "topic": "mlops",
+    "difficulty_tier": "hard",
+    "gold_answer": "Use incremental/online learning or train on recent data only. Pipeline: data ingestion → feature store → distributed training (Spark/Ray) → model registry → automated A/B testing → deployment. Schedule with Airflow or Kubeflow.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_004",
+    "question": "Your LLM application is producing hallucinations. List five concrete mitigation strategies in order of implementation priority.",
+    "question_type": "reasoning",
+    "topic": "llm_safety",
+    "difficulty_tier": "hard",
+    "gold_answer": "1. RAG (retrieval-augmented generation) to ground answers. 2. Confidence-gated responses — refuse when uncertain. 3. RLHF/RLAIF with factuality rewards. 4. Output verification via tool calls. 5. Ensemble and consistency checks across multiple model calls.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_005",
+    "question": "Design a database schema for a multi-tenant SaaS application where each tenant's data must be strictly isolated.",
+    "question_type": "reasoning",
+    "topic": "database_design",
+    "difficulty_tier": "expert",
+    "gold_answer": "Three approaches: (1) Database-per-tenant: strongest isolation, high cost. (2) Schema-per-tenant: moderate isolation, shared DB. (3) Row-level isolation with tenant_id column + row-level security: lowest cost, requires rigorous policy enforcement. Recommended: Schema-per-tenant for regulated industries; row-level for cost-sensitive deployments.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_006",
+    "question": "You need to build a recommendation system from scratch with cold-start constraints. What approach would you take in the first 6 months?",
+    "question_type": "reasoning",
+    "topic": "recommendation_systems",
+    "difficulty_tier": "expert",
+    "gold_answer": "Month 1–2: Popularity-based and content-based filtering (no user history needed). Month 3–4: Collect implicit feedback, build collaborative filtering on available data. Month 5–6: Hybrid model combining content + collaborative signals. Handle cold-start via onboarding questions and transfer from similar users.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_007",
+    "question": "What steps would you take to reduce the latency of a slow SQL query from 8 seconds to under 100ms?",
+    "question_type": "reasoning",
+    "topic": "database_optimisation",
+    "difficulty_tier": "moderate",
+    "gold_answer": "1. EXPLAIN ANALYZE to identify bottlenecks. 2. Add missing indexes on filter and join columns. 3. Rewrite N+1 queries as JOINs. 4. Partition large tables. 5. Add query result caching (Redis). 6. Denormalise or use materialised views for heavy aggregations.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_008",
+    "question": "Design an evaluation framework for an LLM-powered customer support agent. What metrics would you track and how?",
+    "question_type": "reasoning",
+    "topic": "llm_evaluation",
+    "difficulty_tier": "hard",
+    "gold_answer": "Metrics: (1) Resolution rate (% queries resolved without escalation). (2) Factual accuracy (human evaluation sample). (3) Hallucination rate (verified against knowledge base). (4) Response latency (p95). (5) User CSAT. Evaluation: automated red-teaming, golden dataset regression, A/B on live traffic with guardrails.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_009",
+    "question": "A microservice handles payments and experiences 5xx errors under load spikes. What is your diagnosis and remediation plan?",
+    "question_type": "reasoning",
+    "topic": "site_reliability",
+    "difficulty_tier": "expert",
+    "gold_answer": "Diagnosis: check thread pool exhaustion, DB connection pool limits, downstream service timeouts, memory pressure. Remediation: implement circuit breakers (Hystrix/Resilience4j), bulkhead pattern, connection pool tuning, async processing with queues (Kafka), horizontal autoscaling with load shedding.",
+    "clearly_answerable": true
+  },
+  {
+    "id": "eval_plan_010",
+    "question": "You are tasked with migrating a 1TB monolithic PostgreSQL database to a distributed system with minimal downtime. Describe your migration plan.",
+    "question_type": "reasoning",
+    "topic": "data_engineering",
+    "difficulty_tier": "expert",
+    "gold_answer": "1. Assess read/write patterns to identify sharding key. 2. Set up target distributed system (CockroachDB, Citus, or Vitess). 3. Dual-write phase: all writes go to both systems. 4. Backfill historical data in batches. 5. Shadow-read validation. 6. Traffic cut-over with instant rollback capability. 7. Decommission old system after stabilisation.",
+    "clearly_answerable": true
+  }
+]

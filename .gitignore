@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+env/
+!backend/env/
+!backend/env/**
+# Still ignore bytecode inside OpenEnv package dir
+backend/env/__pycache__/
+.env
+.venv/
+
+# Data generated at runtime
+data/
+plots/*.png
+plots/*.jpg
+
+# GRPO training output
+evoai-grpo-output/
+
+# FAISS index (too large for git)
+eval/faiss_index
+
+# Frontend build
+frontend/dist/
+frontend/node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit API keys
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+uvicorn.log
